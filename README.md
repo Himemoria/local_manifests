@@ -13,11 +13,23 @@ curl -o .repo/local_manifests/local_manifests.xml https://raw.githubusercontent.
 repo sync -j$(nproc --all) --force-sync
 ```
 
-### AOSP S ###
+### AOSP S R-VENDOR ###
 
 # Grab Local Manifest
 ```bash
 curl -o .repo/local_manifests/local_manifests.xml https://raw.githubusercontent.com/Himemoria/local_manifests/master/twelve.xml --create-dirs
+```
+
+# Sync
+```bash
+repo sync -j$(nproc --all) --force-sync
+```
+
+### AOSP S S-VENDOR ###
+
+# Grab Local Manifest
+```bash
+curl -o .repo/local_manifests/local_manifests.xml https://raw.githubusercontent.com/Himemoria/local_manifests/master/twelve-s.xml --create-dirs
 ```
 
 # Sync

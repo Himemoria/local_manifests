@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="Himemoria"
+           fetch="https://github.com/Himemoria"
+           revision="twelve-s"/>
+
+  <remote  name="MT6768-Dev"
+           fetch="https://github.com/6768Team"/>
+
+ <!-- Device Trees -->
+  <project path="device/xiaomi/merlinx" name="android_device_xiaomi_merlinx" remote="Himemoria"/>
+  <project path="device/xiaomi/mt6768-common" name="android_device_xiaomi_mt6768-common" remote="Himemoria"/>
+
+ <!-- Vendor Trees -->
+  <project path="vendor/xiaomi/merlinx" name="android_vendor_xiaomi_merlinx" remote="Himemoria"/>
+  
+ <!-- Sepolicy -->
+  <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="MT6768-Dev" revision="lineage-19.1-S"/>
+
+ <!-- Hardware -->
+  <project path="hardware/mediatek" name="nashc-dev/android_hardware_mediatek" remote="github" revision="lineage-19.1" />
+
+</manifest>
